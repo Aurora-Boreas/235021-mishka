@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Галина Борисова](https://up.htmlacademy.ru/adaptive/10/user/235021).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://up.htmlacademy.ru/adaptive/10/user/86119).
 
 ---
 
