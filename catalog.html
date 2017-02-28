@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy - Mishka</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <h1 class="page-header__title">Mishka</h1>
+
+        <div class="page-logo">
+          <a href="index.html" class="page-logo__link">
+            
+              <img src="" alt="Mishka" >
+            
+          </a>
+          <button class="page-logo__toggle" type="button">Открыть меню</button>
+        </div>
+
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Поиск по сайту</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Корзина: пока пуста</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="catalog-main">
+      
+      <section class="promo">
+        <div class="promo__wrapper">
+          <h2 class="promo__title">Каталог товаров</h2>
+        </div>
+      </section>
+
+      <article class="catalog-item">
+        <div class="catalog-item__wrapper">
+          
+            <img class="catalog-item__picture" src="" alt="Зайчик-попрыгайчик" class="catalog-item__picture">
+           
+          <h1 class="catalog-item__title">Зайчик-попрыгайчик</h1>
+          <p class="catalog-item__text">Рост 30 см, вес 200 г</p>
+          <span class="catalog-item__price">1 200 руб.</span>
+          <a href="#" class="btn btn--buy">Купить</a>
+        </div>
+      </article>
+
+      <article class="catalog-item">
+        <div class="catalog-item__wrapper">
+          
+            <img class="catalog-item__picture" src="" alt="Корзинка для белья" >
+          
+          <h1 class="catalog-item__title">Корзинка для белья</h1>
+          <p class="catalog-item__text">Диаметр 15 см, высота 10 см</p>
+          <span class="catalog-item__price">690 руб.</span>
+          <a href="#" class="btn btn--buy">Купить</a>
+        </div>
+      </article>
+
+      <article class="catalog-item">
+        <div class="catalog-item__wrapper">
+          
+            <img class="catalog-item__picture" src="" alt="Большая корзинка для игрушек" class="catalog-item__picture">
+          
+          <h1 class="catalog-item__title">Большая корзинка для игрушек</h1>
+          <p class="catalog-item__text">Диаметр 30 см, высота 30 см</p>
+          <span class="catalog-item__price">1 500 руб.</span>
+          <a href="#" class="btn btn--buy">Купить</a>
+        </div>
+      </article>
+
+      <article class="catalog-video">
+        <div class="catalog-video__wrapper">
+          <h1 class="catalog-video__title">Процесс производства</h1>
+          
+            <img class="catalog-video__video" src="" alt="Процесс производства">
+          
+          <a href="#" class="btn btn--play">Play</a>
+          <p class="catalog-video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        </div>
+      </article>
+
+      <a href="#" class="btn btn--order" type="submit">Сделать заказ</a>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer-social">
+          <a href="#" class="footer-social__item footer-social__item--insta">Instagram</a>
+          <a href="#" class="footer-social__item footer-social__item--fb">Facebook</a>
+          <a href="#" class="footer-social__item footer-social__item--tw">Twitter</a>
+        </div>
+    
+        <div class="footer-author">
+          <span class="footer-author__text">Разработано</span>
+          <a href="http://htmlacademy.ru" class="footer-author__link">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+
+    <form class="modal-cart hidden" action="https://echo.htmlacademy.ru" method="get">
+      <div class="modal-cart__wrapper">
+        <h1 class="modal-cart__title">Добавить в корзину</h1>
+        <p class="modal-cart__text">Выберите размер:</p>
+        <ul class="modal-cart__list">
+          <li class="modal-cart__item">
+            <input type="radio" class="modal-cart__input" name="size" id="size-s" checked="checked" >    
+            <label for="size-s" class="modal-cart__label">S</label>
+          </li>
+          <li class="modal-cart__item">
+            <input type="radio" name="size" id="size-m" class="modal-cart__input">    
+            <label for="size-m" class="modal-cart__label">M</label>
+          </li>
+          <li class="modal-cart__item">
+            <input type="radio" name="size" id="size-l" class="modal-cart__input">    
+            <label for="size-l" class="modal-cart__label">L</label>
+          </li>
+        </ul>
+
+        <a class="btn btn--add" href="#">Добавить</a>
+
+      </div>
+    </form>
+
+  </body>
+</html>      
