@@ -4,7 +4,8 @@
   "private": true,
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "0.1.x"
+    "@htmlacademy/editorconfig-cli": "0.1.x",
+    "gulp-sass": "^3.1.0"
   },
   "scripts": {
     "test": "editorconfig-cli"
@@ -15,5 +16,20 @@
   ],
   "engines": {
     "node": "6.10"
-  }
+  },
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-sass": "^3.1.0",
+    "gulp": "^3.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aurora-Boreas/235021-mishka.git"
+  },
+  "author": "Galina Borisova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aurora-Boreas/235021-mishka/issues"
+  },
+  "homepage": "https://github.com/Aurora-Boreas/235021-mishka#readme"
 }
