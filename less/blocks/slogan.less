@@ -1,0 +1,57 @@
+.slogan {
+  .flex();
+  flex-direction: column;
+
+&__title {
+  .set-font(27px; 30px);
+  text-align: center;
+}
+
+&__items {
+  .flex();
+  flex-direction: row;
+}
+
+.slogan__link {
+  flex-grow: 1;
+  text-decoration: none;
+  color: #ffffff;
+
+    &--interior {
+      background-color: @dark-turquoise;
+    }
+
+    &--interior:hover {
+      background-color: @hvr-interior;
+    }
+
+    &--interior:active {
+      background-color:@hvr-interior;
+      color: #8be2d0;
+    }
+
+    &--toys {
+      background-color: #56c3b2;
+    }
+
+    &--toys:hover {
+      background-color: @hvr-toys;
+    }
+
+    &--toys:active {
+      background-color: @hvr-toys;
+      color: #7ed4c6;
+  }
+}
+
+&__item {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 30px;
+
+  h2 {
+    .set-font(19px; 24px);
+    font-weight: bold;
+  }
+}
+}
