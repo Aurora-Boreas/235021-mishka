@@ -1,0 +1,39 @@
+.contacts {
+  .flex();
+}
+
+.contacts__title {
+  .set-font(18px; 30px);
+  font-weight: bold;
+}
+
+.contacts__email {
+  .flex();
+  flex-direction: row;
+  .set-font(15px; 30px);
+
+    &--text {
+      padding-left: 28px;
+      color: #000000;
+      text-decoration-color: @hvr-placeholder;
+      }
+
+      &:hover {
+        color: @hvr-toys;
+        text-decoration-color: @hvr-placeholder;
+      }
+
+      &:active {
+        color: #d6f1ed;
+        text-decoration-color: #ecf9f7;
+      }
+}
+
+.contacts__address {
+  .flex();
+  flex-direction: row;
+
+  &--text {
+    padding-left: 28px;
+  }
+}

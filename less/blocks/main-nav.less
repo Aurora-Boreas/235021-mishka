@@ -1,0 +1,37 @@
+.main-nav {
+  padding-top:35px;
+  padding-bottom:35px;
+  border-color-top: @line;
+}
+
+.main-nav__list {
+  .flex();
+  flex-direction:row;
+  justify-content:space-between;
+  margin:0;
+  padding:0;
+  list-style:none;
+  font-size:0;
+}
+
+.main-nav__item {
+  display:inline-block;
+  vertical-align:top;
+  text-align:center;
+}
+
+.main-nav__link {
+  .set-font(17px; 24px);
+  font-weight:700;
+  color:@color;
+  text-decoration: none;
+
+  &:hover {
+    color: @hvr-txt;
+  }
+
+  &:active {
+    color: @down-txt;
+  }
+}
+
