@@ -2,19 +2,19 @@
   "name": "mishka",
   "version": "0.1.0",
   "private": true,
-  "description": "Личный проект «Мишка» от HTML Academy",
+  "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
-    "autoprefixer": "6.5.3",
-    "browser-sync": "2.18.2",
+    "autoprefixer": "6.7.x",
+    "browser-sync": "2.18.8",
     "gulp": "3.9.1",
     "gulp-less": "3.3.0",
     "gulp-plumber": "1.1.0",
-    "gulp-postcss": "6.2.0",
+    "gulp-postcss": "6.3.0",
     "@htmlacademy/editorconfig-cli": "0.1.x"
   },
 
   "scripts": {
-    "test": "editorcogulpnfig-cli",
+    "test": "editorconfig-cli",
     "build": "gulp style",
     "start": "gulp serve"
   },
@@ -29,6 +29,6 @@
   ],
 
   "engines": {
-    "node": "6.10.0"
+    "node": "6.10"
   }
 }
