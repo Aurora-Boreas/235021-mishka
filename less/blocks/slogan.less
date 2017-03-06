@@ -1,13 +1,14 @@
 .slogan {
   .flex();
   flex-direction: column;
+}
 
-&__title {
+.slogan__title {
   .set-font(27px; 30px);
   text-align: center;
 }
 
-&__items {
+.slogan__items {
   .flex();
   flex-direction: row;
 }
@@ -32,26 +33,27 @@
 
     &--toys {
       background-color: #56c3b2;
-    }
+      }
 
-    &--toys:hover {
-      background-color: @hvr-toys;
-    }
+      &:hover {
+        background-color: @hvr-toys;
+      }
 
-    &--toys:active {
-      background-color: @hvr-toys;
-      color: #7ed4c6;
-  }
+      &:active {
+        background-color: @hvr-toys;
+        color: #7ed4c6;
+      }
 }
 
-&__item {
+.slogan__item {
   padding-top: 28px;
   padding-bottom: 28px;
   padding-left: 30px;
+}
 
-  h2 {
+.slogan  h2 {
     .set-font(19px; 24px);
     font-weight: bold;
-  }
 }
-}
+
+

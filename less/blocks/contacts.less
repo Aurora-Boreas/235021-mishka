@@ -1,43 +1,39 @@
 .contacts {
   .flex();
+}
 
-  &__title {
-    .set-font(18px; 30px);
-    font-weight: bold;
-  }
+.contacts__title {
+  .set-font(18px; 30px);
+  font-weight: bold;
+}
 
-  &__email {
-    .flex();
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    .set-font(15px; 30px);
+.contacts__email {
+  .flex();
+  flex-direction: row;
+  .set-font(15px; 30px);
 
     &--text {
       padding-left: 28px;
       color: #000000;
       text-decoration-color: @hvr-placeholder;
-    }
+      }
 
-    &--text:hover {
-      color: @hvr-toys;
-      text-decoration-color: @hvr-placeholder;
-    }
+      &:hover {
+        color: @hvr-toys;
+        text-decoration-color: @hvr-placeholder;
+      }
 
-    &--text:active {
-      color: #d6f1ed;
-      text-decoration-color: #ecf9f7;
-    }
-  }
+      &:active {
+        color: #d6f1ed;
+        text-decoration-color: #ecf9f7;
+      }
+}
 
-  &__address {
-    .flex();
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
+.contacts__address {
+  .flex();
+  flex-direction: row;
 
-    &--text {
-      padding-left: 28px;
-    }
+  &--text {
+    padding-left: 28px;
   }
 }
