@@ -1,16 +1,42 @@
 .features {
 
+  .media(tablet; {
+    padding-top: 43px;
+    padding-bottom: 69px;
+  });
+  .media(desktop; {
+    padding-top: 105px;
+    padding-bottom: 97px;
+  });
 }
 
 .features__wrapper {
-  padding-left: 28px;
-  padding-right: 28px;
+  position: relative;
   .flex();
   flex-direction: column;
+  .wrapper-container();
+
+  .media(desktop; {
+  padding-left: 175px;
+  });
 }
 
 .features__title {
   .set-font(25px; 30px);
+  margin: 0;
+
+  .media(tablet; {
+    .set-font(43px; 50px);
+    /*padding-top: 50px;
+    padding-bottom: 56px;*/
+    flex-grow: 1;
+  });
+
+  .media(desktop; {
+    .set-font(53px; 57px);
+    /*padding-top: 130px;
+    padding-bottom: 60px;*/
+    });
 }
 
 .features__promo-label {
@@ -18,10 +44,51 @@
   font-weight: bold;
   color: @dark-turquoise;
   text-transform: uppercase;
+
+  .media(tablet; {
+    position: absolute;
+    display: inline-block;
+    vertical-align: baseline;
+    text-align: center;
+    width: 100px;
+    top: 29px;
+    right: 60px;
+  });
+
+  .media(desktop; {
+    position: absolute;
+    top: 117px;
+    left: 45px;
+  })
+}
+
+.features__descriptions {
+  .media(tablet; {
+    .flex();
+    flex-direction: column;
+    });
+}
+
+
+
+.features__picture {
+
+  .media(tablet; {
+    flex-basis: 50%;
+    order: 1;
+    flex-grow: 1;
+    });
 }
 
 .features__text {
   .set-font(15px; 24px);
+  margin-top: 5px;
+  margin-bottom: 2px;
+    .media(tablet; {
+      .set-font(17px; 30px);
+      width: 50%;
+      padding-right: 53px;
+    });
 }
 
 .features__performance {
@@ -37,8 +104,34 @@
 .features__price {
   .set-font(17px; 24px;);
   font-weight: bold;
+  display: inline-block;
+  vertical-align: baseline;
   text-align: center;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  margin-bottom: 26px;
+    .media(tablet; {
+      .set-font(20px; 24px);
+      width: 43%;
+      margin-bottom: 35px;
+    });
 }
+
+.features__picture {
+  z-index: -1;
+  margin-bottom: 18px;
+    .media(tablet; {
+      position: absolute;
+      right: 0;
+      top: 125px;
+      width: 334px;
+
+      .media(desktop; {
+        top: 74px;
+        width: 525px;
+
+      });
+    });
+
+}
+
+
 

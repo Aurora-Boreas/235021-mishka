@@ -1,13 +1,22 @@
 .catalog-item {
   .flex();
   flex-direction: column;
-}
+  border: 1px solid #ededed;
+  margin-bottom: 29px;
 
-.catalog-item__wrapper {
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  border: 1px solid @line;
+  .media(tablet; {
+    flex-direction: row;
+    padding-bottom: 0;
+    margin-bottom: 54px;
+    height: 334px;
+  });
+  .media(desktop; {
+    flex-direction: column;
+    width: 316px;
+    height: 660px;
+  });
+
+  .box-shadow();
 }
 
 .catalog-item__description {

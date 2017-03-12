@@ -49,11 +49,27 @@
     margin-left: 28px;
     padding-left: 24px;
     padding-right: 24px;
+    .media(tablet {
+      margin-left: 43px;
+      margin-right: 43px;
+      });
+    .media(desktop; {
+      margin-left: 78px;
+      margin-right: 58px;
+    });
   }
 
   &--send {
     background-color: #ffffff;
-    margin-left: 28px;
+
+  }
+
+  &--review-write {
+    .media(tablet; {
+    position: absolute;
+    top: 0;
+    right: 0;
+  });
   }
 
 }

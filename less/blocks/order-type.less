@@ -3,8 +3,11 @@
 }
 
 .order-type__wrapper {
-  padding-left: 28px;
-  padding-right: 28px;
+  .flex();
+  .wrapper-container();
+  .media(tablet; {
+  flex-direction: row;
+  });
 }
 
 .order-type__description {
@@ -14,6 +17,14 @@
   text-transform: uppercase;
   margin-bottom: 13px;
   color: @dark-turquoise;
+    .media(tablet; {
+      width: 167px;
+      text-align: left;
+    });
+    .media(desktop; {
+      width: 175px;
+      text-align: center;
+    });
 
   &:after {
     content: '';
@@ -23,6 +34,9 @@
     width: 200px;
     height: 1px;
     background-color: @dark-turquoise;
+    .media(tablet; {
+    display: none;
+    });
     }
 }
 

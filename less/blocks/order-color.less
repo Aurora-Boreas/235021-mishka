@@ -1,12 +1,14 @@
 .order-color {
-  .flex();
-  flex-direction: column;
   margin-bottom: 28px;
+  background-color: @bg-color;
 }
 
 .order-color__wrapper {
-  padding-left: 28px;
-  padding-right: 28px;
+  .flex();
+  .wrapper-container();
+  .media(tablet; {
+  flex-direction: row;
+  });
 }
 
 .order-color__description {
@@ -16,6 +18,14 @@
   text-transform: uppercase;
   margin-bottom: 13px;
   color: @dark-turquoise;
+    .media(tablet; {
+      width: 167px;
+      text-align: left;
+    });
+    .media(desktop; {
+      width: 175px;
+      text-align: center;
+    });
 
   &:after {
     content: '';
@@ -25,14 +35,35 @@
     width: 200px;
     height: 1px;
     background-color: @dark-turquoise;
+    .media(tablet; {
+    display: none;
+    });
     }
 }
+
+.order-color__list {
+  .media(tablet; {
+    width: 500px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    });
+  .media(desktop; {
+    width: 700px;
+    });
+
+ }
 
 .order-color__item {
   .set-font(17px; 18px);
   font-weight: bold;
   .flex();
   flex-direction: row;
+  .media(tablet; {
+    width: 50%;
+    });
+  .media(desktop; {
+    width: 33%;
+    });
 }
 
 .order-color__input[type='checkbox'] {
