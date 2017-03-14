@@ -3,28 +3,21 @@
   flex-direction: column;
   justify-content: center;
   background-color: #f9f9f9;
+  border-top: 1px solid @line;
 }
 
 .slogan__wrapper{
-    background-image: url('../img/hero-mobile@1x.jpg');
-    background-position: center -15px;
-    background-repeat: no-repeat;
-    .wrapper-container();
-    &--title {
-       .flex();
-      justify-content: center;
-     }
-
-    /*&--items {
-     .media(tablet; {
-      margin-left: 50px;
-      margin-right: 50px;
-      });
-    }*/
+  background-image: url('../img/hero-mobile@1x.jpg');
+  background-position: center -15px;
+  background-repeat: no-repeat;
+  .wrapper-container();
+  &--title {
+     .flex();
+    justify-content: center;
+  }
 }
 
 .slogan__title {
-
   .set-font(27px; 30px);
   text-align: center;
   margin: 0;
@@ -43,7 +36,7 @@
   .media(desktop; {
     .set-font(53px; 57px);
     opacity: 1;
-    padding-top: 79px;
+    padding-top: 155px;
     padding-bottom: 359px;
   });
 }
@@ -59,7 +52,7 @@
 
 .slogan__link {
   position: relative;
-  flex-grow: 1;
+  width: 50%;
   text-decoration: none;
   color: #ffffff;
   padding-left: 29px;
@@ -72,6 +65,7 @@
 
       &:hover {
         background-color: @hvr-interior;
+        margin-top: -5px;
       }
 
       &:active {
@@ -85,6 +79,7 @@
 
       &:hover {
         background-color: @hvr-toys;
+        margin-top: -5px;
       }
 
       &:active {
@@ -99,10 +94,10 @@
   right: 35px;
 }
 
-.slogan__item h2 {
+.slogan__link h2 {
     .set-font(19px; 24px);
     font-weight: bold;
-    width: 40.6%;
+    width: 145px;
 }
 
 

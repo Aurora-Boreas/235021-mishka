@@ -1,35 +1,20 @@
-/*.catalog-items {
-  .flex();
-  flex-direction: column;
-  padding-top: 25px;
-    .media(tablet; {
-      padding-top: 78px;
-    });
-    .media(desktop; {
-      flex-direction: row;
-      justify-content: space-between;
-      padding-top: 130px;
-      padding-bottom: 3px;
-    });
-}*/
-
 .catalog-items__wrapper {
   .flex();
   flex-direction: column;
   padding-top: 25px;
   margin-bottom: 30px;
-  border: 1px solid @line;
   .wrapper-container();
-    .media(tablet; {
-      padding-top: 78px;
-    });
-    .media(desktop; {
-      flex-direction: row;
-      justify-content: space-between;
-      padding-top: 130px;
-      padding-bottom: 3px;
-    });
 
+  .media(tablet; {
+    padding-top: 70px;
+  });
 
-
+  .media(desktop; {
+    .flex();
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 130px;
+    padding-bottom: 13px;
+  });
 }
+

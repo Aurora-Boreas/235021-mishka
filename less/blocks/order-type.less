@@ -5,8 +5,9 @@
 .order-type__wrapper {
   .flex();
   .wrapper-container();
+
   .media(tablet; {
-  flex-direction: row;
+    flex-direction: row;
   });
 }
 
@@ -17,14 +18,16 @@
   text-transform: uppercase;
   margin-bottom: 13px;
   color: @dark-turquoise;
-    .media(tablet; {
-      width: 167px;
-      text-align: left;
-    });
-    .media(desktop; {
-      width: 175px;
-      text-align: center;
-    });
+
+  .media(tablet; {
+    width: 167px;
+    text-align: left;
+  });
+
+  .media(desktop; {
+    width: 175px;
+    text-align: center;
+  });
 
   &:after {
     content: '';
@@ -34,10 +37,11 @@
     width: 200px;
     height: 1px;
     background-color: @dark-turquoise;
+
     .media(tablet; {
-    display: none;
+      display: none;
     });
-    }
+  }
 }
 
 .order-type__item {
@@ -52,48 +56,47 @@
 }
 
 .order-type__input {
+  background: 0 0;
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+  padding-bottom: 16px;
 
-      background: 0 0;
-      border: none;
-      border-bottom: 2px solid #000;
-      outline: none;
-      padding-bottom: 16px;
-
-      &:hover,
-      &:focus {
-        border-bottom: 2px solid @dark-turquoise;
-      }
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid @dark-turquoise;
+  }
 }
 
 .order-type__label {
-    position: relative;
-    cursor: pointer;
-    padding-top: 15px;
-    padding-left: 60px;
-    padding-bottom: 13px;
+  position: relative;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-left: 60px;
+  padding-bottom: 13px;
 
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    width: 39px;
+    height: 39px;
+    border: 2px solid @color;
+    border-radius: 50%;
+    box-sizing: border-box;
+    }
+
+  &:hover {
     &:before {
-      content: '';
-      position: absolute;
-      left: 0px;
-      top: 10px;
-      width: 39px;
-      height: 39px;
-      border: 2px solid @color;
-      border-radius: 50%;
-      box-sizing: border-box;
-      }
-
-    &:hover {
-      &:before {
-        border: 2px solid @hvr-placeholder;
-      }
+      border: 2px solid @hvr-placeholder;
     }
-    &:active {
-      &:before {
-        border: 2px solid #c7c7c7;
-      }
+  }
+  &:active {
+    &:before {
+      border: 2px solid #c7c7c7;
     }
+  }
 }
 
 .order-type__input:checked + .order-type__label:after {

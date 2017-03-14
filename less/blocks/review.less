@@ -14,9 +14,10 @@
   .media(tablet; {
     position: relative;
     background: url('../img/review@1x.jpg') no-repeat;
-    .media(desktop; {
+  });
+
+  .media(desktop; {
     padding-left: 175px;
-    });
   });
 }
 
@@ -27,6 +28,7 @@
    .media(tablet; {
     .set-font(43px; 50px);
   });
+
   .media(desktop; {
     .set-font(53px; 57px);
   });
@@ -55,12 +57,14 @@
   justify-content: center;
   padding-top: 35px;
   padding-bottom: 7px;
-    .media(tablet; {
-      position: absolute;
-      right: 49px;
-      bottom: 0px;
-    });
-    .media(desktop; {
-      bottom: 38px;
-    });
+
+  .media(tablet; {
+    position: absolute;
+    right: 49px;
+    bottom: 0px;
+  });
+
+  .media(desktop; {
+    bottom: 38px;
+  });
 }

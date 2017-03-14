@@ -10,47 +10,42 @@
 
     <header class="page-header">
       <div class="page-header__wrapper">
-
         <nav class="main-nav">
-          <ul class="main-nav__list">
 
-            <li class="main-nav__item  main-nav__item--logo">
-              <a href="index.html" class="main-nav__link">
+          <div class="main-nav__top">
+              <a href="index.html" class="main-nav__logo-link">
                 <picture>
-                  <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин 'Мишка' - милые штуки ручной работы для дома">
+                  <img src="" width="86" height="35" alt="Мишка">
                 </picture>
               </a>
               <button class="main-nav__toggle" type="button">Открыть меню</button>
-            </li>
+          </div>
 
-            <li class="main-nav__item  main-nav__item--toggle  main-nav__item--catalog">
+          <ul class="main-nav__list">
+            <li class="main-nav__item  main-nav__item--catalog">
               <a href="catalog.html" class="main-nav__link">Каталог товаров</a>
             </li>
-            <li class="main-nav__item  main-nav__item--toggle  main-nav__item--order">
+            <li class="main-nav__item  main-nav__item--order">
               <a href="form.html" class="main-nav__link">Вязание на заказ</a>
             </li>
-            <li class="main-nav__item  main-nav__item--toggle  main-nav__item--search">
+            <li class="main-nav__item  main-nav__item--search">
               <a href="#" class="main-nav__link">Поиск по сайту</a>
             </li>
-            <li class="main-nav__item  main-nav__item--toggle  main-nav__item--cart">
+            <li class="main-nav__item  main-nav__item--cart">
               <a href="#" class="main-nav__link">Корзина: пока пуста</a>
             </li>
-            <li class="main-nav__item  main-nav__item--toggle  main-nav__item--new">
+            <li class="main-nav__item  main-nav__item--new">
               <a href="#" class="main-nav__link">Новые поступления</a>
             </li>
-            <li class="main-nav__item  main-nav__item--toggle  main-nav__item--sale">
+            <li class="main-nav__item  main-nav__item--sale">
               <a href="#" class="main-nav__link">Распродажа</a>
             </li>
-            <li class="main-nav__item  main-nav__item--toggle  main-nav__item--shipping">
+            <li class="main-nav__item  main-nav__item--shipping">
               <span>Бесплатная доставка по России</span>
             </li>
           </ul>
         </nav>
       </div>
-
-      <!--<div class="page-header__toggle">
-        <button class="btn btn--open-menu" type="button">Открыть меню</button>
-      </div>-->
 
       <section class="slogan">
         <div class="slogan__wrapper  slogan__wrapper--title">
@@ -60,20 +55,15 @@
         <div class="slogan__wrapper  slogan__wrapper--items">
           <div class="slogan__items">
             <a href="#" class="slogan__link  slogan__link--interior">
-              <div class="slogan__item">
-                <h2>Предметы интерьера</h2>
-              </div>
+              <h2>Предметы интерьера</h2>
             </a>
             <a href="#" class="slogan__link  slogan__link--toys">
-              <div class="slogan__item">
-                <h2>Детские игрушки</h2>
-              </div>
+              <h2>Детские игрушки</h2>
             </a>
           </div>
         </div>
       </section>
     </header>
-
 
     <main class="main-page">
 
@@ -166,7 +156,6 @@
 
         </div>
       </section>
-
     </main>
 
     <footer class="footer">
@@ -193,7 +182,6 @@
         <h1 class="modal-cart__title">Добавить в корзину</h1>
         <p class="modal-cart__text">Выберите размер:</p>
         <div class="modal-cart__list">
-
             <input type="radio" class="modal-cart__input" name="size" id="size-s" checked="checked" >
             <label for="size-s" class="modal-cart__label">S</label>
 
@@ -202,7 +190,6 @@
 
             <input type="radio" name="size" id="size-l" class="modal-cart__input">
             <label for="size-l" class="modal-cart__label">L</label>
-
         </div>
 
         <button class="btn  btn--add" href="#">Добавить</button>
@@ -210,7 +197,7 @@
       </div>
     </form>
 
-  <!-- <script src="js/main.js"></script>-->
+   <script src="js/main.js"></script>
 
   </body>
 </html>
