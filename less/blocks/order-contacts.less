@@ -2,11 +2,23 @@
   .flex();
   flex-direction: column;
   margin-bottom: 28px;
+  background-color: @bg-color;
 }
 
 .order-contacts__wrapper {
-  padding-left: 28px;
-  padding-right: 28px;
+  .flex();
+  .wrapper-container();
+
+  .media(tablet; {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  });
+}
+
+.order-contacts__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .order-contacts__item {
@@ -16,6 +28,11 @@
   margin-bottom: 28px;
   color: @dark-turquoise;
 
+  .media(tablet; {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  });
+
   &:after {
     content: '';
     position: absolute;
@@ -24,7 +41,11 @@
     width: 200px;
     height: 1px;
     background-color: @dark-turquoise;
-    }
+
+    .media(tablet; {
+      display: none;
+    });
+  }
 }
 
 .order-contacts__description {
@@ -32,6 +53,16 @@
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
+
+  .media(tablet; {
+    width: 167px;
+    text-align: left;
+  });
+
+  .media(desktop; {
+    width: 175px;
+    text-align: center;
+  });
 }
 
 .order-contacts__input {
@@ -42,6 +73,15 @@
   padding-left: 15px;
   padding-bottom: 16px;
   color: #c7c7c7;
+  background: transparent;
+
+  .media(tablet; {
+    width: 500px;
+  });
+
+  .media(desktop; {
+    width: 700px;
+  });
 
   &:hover {
     border-left: 1px solid @dark-turquoise;
@@ -54,5 +94,6 @@
     border-left: 1px solid @dark-turquoise;
     border-right: 1px solid @dark-turquoise;
     border-bottom: 2px solid @dark-turquoise;
+    outline: none;
   }
 }
