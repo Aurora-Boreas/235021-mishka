@@ -36,20 +36,25 @@
 }
 
 .catalog-item__description {
+  display: flex;
   padding-left: 28px;
   padding-right: 28px;
-  /*padding-bottom: 28px;*/
 
   .media(tablet; {
-    .flex();
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 332px;
   });
 
   .media(desktop; {
-    width: 316px;
+    width: 100%;
   });
+}
+
+.catalog-item__main-descript {
+
+  flex-grow: 1;
 }
 
 .catalog-item__title {
@@ -76,17 +81,14 @@
     margin-bottom: 0px;
   });
 
-  .media(desktop; {
-    padding-bottom: 28px;
-  });
+
 }
 
 .catalog-item__to-buy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   border-top: 1px solid @line;
-  /*.media(tablet; {*/
-    padding-top: 25px;
-    margin-bottom: 25px;
-  /*});*/
 }
 
 .catalog-item__price {
@@ -99,6 +101,11 @@
   .media(tablet; {
     .set-font(17px; 24px);
   });
+}
+
+.catalog-item__btn-buy {
+  position: relative;
+  font-size: 0;
 }
 
 
