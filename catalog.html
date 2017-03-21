@@ -60,36 +60,48 @@
         <div class="catalog-items__wrapper">
           <article class="catalog-item">
 
-              <img class="catalog-item__picture" src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик" class="catalog-item__picture">
+              <img class="catalog-item__picture" src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
               <div class="catalog-item__description">
-                <h1 class="catalog-item__title">Зайчик-попрыгайчик</h1>
-                <p class="catalog-item__text">Рост 30 см, вес 200 г</p>
-                <span class="catalog-item__price">1 200 руб.</span>
-                <a href="#" class="btn btn--buy">Купить</a>
+                <div class="catalog-item__main-descript">
+                  <h1 class="catalog-item__title">Зайчик-попрыгайчик</h1>
+                  <p class="catalog-item__text">Рост 30 см, вес 200 г</p>
+                </div>
+                <div class="catalog-item__to-buy">
+                  <span class="catalog-item__price">1 200 руб.</span>
+                  <a href="#" class="catalog-item__btn-buy">Купить</a>
+                </div>
               </div>
 
           </article>
 
           <article class="catalog-item">
 
-              <img class="catalog-item__picture" src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья" >
+              <img class="catalog-item__picture" src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
               <div class="catalog-item__description">
-                <h1 class="catalog-item__title">Корзинка для белья</h1>
-                <p class="catalog-item__text">Диаметр 15 см, высота 10 см</p>
-                <span class="catalog-item__price">690 руб.</span>
-                <a href="#" class="btn btn--buy">Купить</a>
+                <div class="catalog-item__main-descript">
+                  <h1 class="catalog-item__title">Корзинка для белья</h1>
+                  <p class="catalog-item__text">Диаметр 15 см, высота 10 см</p>
+                </div>
+                <div class="catalog-item__to-buy">
+                  <span class="catalog-item__price">690 руб.</span>
+                  <a href="#" class="catalog-item__btn-buy">Купить</a>
+                </div>
               </div>
 
           </article>
 
           <article class="catalog-item">
 
-              <img class="catalog-item__picture" src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек" class="catalog-item__picture">
+              <img class="catalog-item__picture" src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
               <div class="catalog-item__description">
-                <h1 class="catalog-item__title">Большая корзинка для игрушек</h1>
-                <p class="catalog-item__text">Диаметр 30 см, высота 30 см</p>
-                <span class="catalog-item__price">1 500 руб.</span>
-                <a href="#" class="btn btn--buy">Купить</a>
+                <div class="catalog-item__main-descript">
+                  <h1 class="catalog-item__title">Большая корзинка для игрушек</h1>
+                  <p class="catalog-item__text">Диаметр 30 см, высота 30 см</p>
+                </div>
+                <div class="catalog-item__to-buy">
+                  <span class="catalog-item__price">1 500 руб.</span>
+                  <a href="modal.html" class="catalog-item__btn-buy">Купить</a>
+                </div>
               </div>
 
           </article>
@@ -105,7 +117,7 @@
           <a href="#" class="catalog-video__btn">Play</a>
           <p class="catalog-video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
 
-          <a href="#" class="btn btn--order" type="submit">Сделать заказ</a>
+          <a href="#" class="btn btn--order">Сделать заказ</a>
         </div>
       </article>
 
@@ -131,6 +143,7 @@
     </footer>
 
     <form class="modal-cart hidden" action="https://echo.htmlacademy.ru" method="get">
+      <div class="modal-cart__overlay"></div>
       <div class="modal-cart__wrapper">
         <h1 class="modal-cart__title">Добавить в корзину</h1>
         <p class="modal-cart__text">Выберите размер:</p>
@@ -147,7 +160,7 @@
 
         </div>
 
-        <button class="btn btn--add" href="#">Добавить</button>
+        <button class="btn btn--add">Добавить</button>
 
       </div>
     </form>
