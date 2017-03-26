@@ -7,7 +7,11 @@ var mobile_menu = document.querySelector(".main-nav__list");
     mobile_menu.classList.remove("main-nav__list--open")
   }
 
-  mobile_menu.classList.remove('main-nav__list--nojs');
+if (mobile_menu.classList.contains("main-nav__list--nojs")) {
+    mobile_menu.classList.remove("main-nav__list--nojs");
+    toggle_btn.classList.remove("main-nav__toggle--nojs");
+};
+ /* mobile_menu.classList.remove('main-nav__list--nojs');*/
 
 toggle_btn.addEventListener("click", function(event) {
   event.preventDefault();
@@ -18,7 +22,7 @@ toggle_btn.addEventListener("click", function(event) {
 
 /*modal form*/
 var modal_open = document.querySelector(".btn--features-order");
-var product_buy = document.querySelectorAll(".btn--buy");
+var product_buy = document.querySelectorAll(".catalog-item__btn-buy");
 
 var modal = document.querySelector(".modal-cart");
 var modal_overlay = document.querySelector(".modal-cart__overlay");
