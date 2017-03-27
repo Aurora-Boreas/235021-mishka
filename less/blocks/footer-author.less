@@ -31,12 +31,18 @@ font-size: 0;
 
   padding-top: 2px;
 
- /* &:hover {
-      opacity: 0.7;
-    }*/
+  &:hover {
+    svg {
+      fill: @hvr-toys;
+    }
+
+    }
 
     &:active {
-      opacity: 0.4;
+      color: #a8a8a8;
+      svg {
+      fill: #bde3dd;
+      }
     }
 
   svg {
@@ -45,13 +51,13 @@ font-size: 0;
     margin-top: 4px;
     fill: @dark-turquoise;
 
-    &:hover {
+   /* &:hover {
       fill: @hvr-toys;
     }
 
     &:active {
       fill: #bde3dd;
-    }
+    }*/
   }
 
 
