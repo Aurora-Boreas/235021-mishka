@@ -1,6 +1,5 @@
 .slogan {
   .flex();
-
   flex-direction: column;
   justify-content: center;
   background-color: #f9f9f9;
@@ -10,48 +9,43 @@
     position: relative;
 
     &::before {
-        position: absolute;
-        content: "";
-        display: block;
-      /*  bottom: -14px;*/
-        width: 100%;
-        height: 23px;
-        z-index: 10;
-        background-image: url('../img/bg-zigzag-fill.svg');
-        background-size: auto 22.7px;
+      position: absolute;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 23px;
+      z-index: 10;
+      background-image: url('../img/bg-zigzag-fill.svg');
+      background-size: auto 22.7px;
+      background-repeat: repeat-x;
+      bottom: -5px;
+    }
+  });
 
-        background-repeat: repeat-x;
-        bottom: -5px;
-      }
-    });
+  .media(desktop; {
+    position: relative;
 
-    .media(desktop; {
-      position: relative;
-
-      &::before {
-        position: absolute;
-        content: "";
-        display: block;
-       /* bottom: -14px;*/
-        width: 100%;
-        height: 23px;
-        z-index: 10;
-        background-image: url('../img/bg-zigzag-fill.svg');
-          background-size: auto 34px;
-          background-color: transparent;
-          background-repeat: repeat-x;
-          bottom: -5px;
-      }
-
-    });
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 23px;
+      z-index: 10;
+      background-image: url('../img/bg-zigzag-fill.svg');
+      background-size: auto 34px;
+      background-color: transparent;
+      background-repeat: repeat-x;
+      bottom: -5px;
+    }
+  });
 }
 
 .slogan__wrapper{
-
   .wrapper-container();
 
   &--title {
-     .flex();
+    .flex();
     justify-content: center;
     background: transparent url('../img/hero-mobile@1x.jpg') center -15px no-repeat;
 
@@ -64,8 +58,8 @@
 
       @media @retina {
         background: transparent 1150px auto url("../img/hero-desktop@2x.jpg") no-repeat;
-       }
-      });
+      }
+    });
 
   };
 
@@ -87,7 +81,6 @@
   padding-top: 70px;
   padding-bottom: 121px;
   width: 243px;
-  /*opacity: 0.45;*/
 
   .media(tablet; {
     width: 500px;
@@ -120,8 +113,6 @@
   width: 100%;
   text-decoration: none;
   color: #ffffff;
-
-  /*background-color: #63d1bb;*/
 
   .media(tablet; {
     width: 50%;
@@ -161,25 +152,6 @@
         color: #7ed4c6;
       }
     }
-
- /*   svg {
-      position: absolute;
-      top: 25px;
-      right: 35px;
-      fill: #3bb09d;
-      .media(desktop; {
-        top: 26px;
-        right: 36px;
-      });
-
-      &:hover {
-        fill: #29a592;
-      }
-
-      &:active {
-        fill: #44c0aa;
-      }
-    }*/
 }
 
 .slogan__icon {
@@ -216,6 +188,7 @@
       top: 30px;
       right: 35px;
     });
+
     .media(desktop; {
       top: 26px;
       right: 36px;
@@ -231,8 +204,6 @@
   }
 }
 
-
-
 .slogan__link h2 {
     .set-font(19px; 24px);
     font-weight: bold;
@@ -246,6 +217,7 @@
     .set-font(20px; 30px);
     padding-bottom: 39px;
   });
+
   .media(desktop; {
     padding-bottom: 32px;
   });
