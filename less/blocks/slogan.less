@@ -127,6 +127,7 @@
     width: 50%;
     padding-left: 10px;
   });
+
   .media(desktop; {
     padding-left: 12px;
   });
@@ -186,34 +187,47 @@
   top: 25px;
   right: 35px;
   fill: #3bb09d;
+
   .media(tablet; {
     top: 28px;
     right: 36px;
   });
+
   .media(desktop; {
     top: 26px;
     right: 36px;
   });
 
-  &:hover {
-    fill: #29a592;
-  }
+  &--interior {
+    &:hover {
+      fill: #29a592;
+    }
 
-  &:active {
-    fill: #44c0aa;
+    &:active {
+      fill: #44c0aa;
+    }
   }
 
   &--toys {
     top: 23px;
     right: 27px;
+
     .media(tablet; {
-    top: 30px;
-    right: 35px;
-  });
+      top: 30px;
+      right: 35px;
+    });
     .media(desktop; {
-    top: 26px;
-    right: 36px;
-  });
+      top: 26px;
+      right: 36px;
+    });
+
+    &:hover {
+      fill: #239f8e;
+    }
+
+    &:active {
+      fill: #37b2a0;
+    }
   }
 }
 

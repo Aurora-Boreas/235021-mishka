@@ -5,6 +5,7 @@
   .media(tablet; {
     padding-top: 55px;
     margin-left: -7px;
+    margin-bottom: 60px;
   });
 
   .media(desktop; {
@@ -19,11 +20,19 @@
     position: absolute;
     content: "";
     display: block;
-    top: 0px;
+    top: -2px;
+ /*   left: -8px;*/
     width: 100%;
     height: 23px;
     background: transparent url("../img/bg-zigzag-line.svg") repeat-x;
     background-size: contain;
+    .media(tablet; {
+      top: 0;
+   /*   left: -18px;*/
+    });
+    .media(desktop; {
+    /*  left: -25px;*/
+    });
   }
 }
 
@@ -50,8 +59,8 @@
     margin-bottom: 58px;
     });
     .media(desktop; {
-      margin-top: 52px;
-      padding-left: 170px;
+      margin-top: 49px;
+      padding-left: 171px;
       justify-content: flex-start;
     });
   }
@@ -67,7 +76,7 @@
    .media(tablet; {
     .set-font(43px; 50px);
     margin-top: 21px;
-    margin-bottom: 49px;
+    margin-bottom: 48px;
 
     &::before{
     position: absolute;
@@ -104,14 +113,17 @@
 .contacts__item {
   display: flex;
   justify-content: flex-start;
+  align-items: baseline;
   /*padding-bottom: 34px;*/
 
   .media(tablet; {
     width: 334px;
+    padding-left: 5px;
 /*    padding-bottom: 61px;*/
   });
 
   .media(desktop; {
+    padding-left: 0;
     padding-bottom: 22px;
   });
 
@@ -123,7 +135,7 @@
   }
 
   &--email {
-    padding-bottom: 34px;
+    padding-bottom: 32px;
     .media(tablet; {
       padding-bottom: 57px;
     });
@@ -148,20 +160,30 @@
   .set-font(15px; 30px);
 
   &--text {
-    margin-left: 25px;
+    margin-left: 30px;
     color: #000000;
     text-decoration: none;
-    border-bottom-color: @hvr-placeholder;
+
+    border-bottom: 1px solid @hvr-placeholder;
 
     &:hover {
       color: @hvr-toys;
-      border-bottom-color: @hvr-placeholder;
+      border-bottom-color: @hvr-toys;
     }
 
     &:active {
       color: #d6f1ed;
       border-bottom-color: #ecf9f7;
     }
+
+    .media(tablet; {
+      display: flex;
+      margin-left: 22px;
+     });
+
+     .media(desktop; {
+     margin-left: 25px;
+     });
   }
 }
 
@@ -174,12 +196,13 @@
   margin-top: -4px;
 
   .media(tablet; {
-      .set-font(17px; 30px);
-      margin-top: 0;
+    .set-font(17px; 30px);
+    margin-top: 0;
+    padding-left: 24px;
   });
 
   .media(desktop; {
-    margin-top: -2px;
+    padding-left: 27px;
   });
   }
 }
