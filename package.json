@@ -4,7 +4,6 @@
   "private": true,
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "0.1.x",
     "autoprefixer": "6.7.x",
     "browser-sync": "2.18.8",
     "css-mqpacker": "^5.0.1",
@@ -18,13 +17,12 @@
     "gulp-rename": "^1.2.2",
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.1.0",
-    "run-sequence": "^1.2.2",
-    "@htmlacademy/editorconfig.cli": "0.1.x"  
+    "run-sequence": "^1.2.2"    
   },
   "scripts": {
     "test": "editorconfig-cli",
     "build": "gulp build",
-    "start": "npm rub build & gulp serve"
+    "start": "npm run build && gulp serve"
   },
   "editorconfig-cli": [
     "*.html",
