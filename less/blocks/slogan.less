@@ -130,11 +130,19 @@
         background-color: @hvr-interior;
         margin-top: -5px;
         padding-bottom: 5px;
+
+        svg {
+          fill: #29a592;
+        }
       }
 
       &:active {
         background-color:@hvr-interior;
         color: #8be2d0;
+
+        svg {
+          fill: #44c0aa;
+        }
       }
     }
 
@@ -145,11 +153,21 @@
         background-color: @hvr-toys;
         margin-top: -5px;
         padding-bottom: 5px;
+
+        svg {
+          fill: #239f8e;
+        }
+
       }
 
       &:active {
         background-color: @hvr-toys;
         color: #7ed4c6;
+
+        svg {
+          fill: #37b2a0;
+        }
+
       }
     }
 }
@@ -170,16 +188,6 @@
     right: 36px;
   });
 
-  &--interior {
-    &:hover {
-      fill: #29a592;
-    }
-
-    &:active {
-      fill: #44c0aa;
-    }
-  }
-
   &--toys {
     top: 23px;
     right: 27px;
@@ -194,13 +202,6 @@
       right: 36px;
     });
 
-    &:hover {
-      fill: #239f8e;
-    }
-
-    &:active {
-      fill: #37b2a0;
-    }
   }
 }
 
