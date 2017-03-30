@@ -11,7 +11,6 @@ if (mobile_menu.classList.contains("main-nav__list--nojs")) {
     mobile_menu.classList.remove("main-nav__list--nojs");
     toggle_btn.classList.remove("main-nav__toggle--nojs");
 };
- /* mobile_menu.classList.remove('main-nav__list--nojs');*/
 
 toggle_btn.addEventListener("click", function(event) {
   event.preventDefault();
