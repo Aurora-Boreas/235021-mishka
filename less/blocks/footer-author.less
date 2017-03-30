@@ -4,9 +4,14 @@
   justify-content: center;
   padding-top: 16px;
   align-items: center;
+
   .media(tablet; {
     padding-top: 7px;
     margin-right: -2px;
+   });
+
+   .media(desktop; {
+    padding-top: 5px;
    });
 }
 
@@ -36,10 +41,14 @@
     }
 
   svg {
-    margin-left: 30px;
-    margin-right: 2px;
+    margin-left: 28px;
+    margin-right: 3px;
     margin-top: 4px;
     fill: @dark-turquoise;
+
+    .media(desktop; {
+      margin-right: 2px;
+    });
   }
 }
 

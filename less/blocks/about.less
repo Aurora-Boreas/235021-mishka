@@ -1,31 +1,35 @@
 .about {
   position: relative;
-  padding-top: 40px;
+  padding-top: 38px;
   margin-bottom: 55px;
 
   &::before{
     position: absolute;
     content: "";
     display: block;
+    left: 1px;
     top: -10px;
-    width: 100%;
+    width: 110%;
     height: 23px;
     background: transparent url("../img/bg-zigzag-line.svg") repeat-x;
     background-size: contain;
     transform: rotate(180deg);
 
     .media(desktop; {
+      width: 100%;
       top: -2px;
+      left: 0;
+      /*transform: rotate(180deg);*/
     });
   }
 
   .media(tablet; {
-    padding-top: 61px;
+    padding-top: 63px;
     margin-bottom: 48px;
   });
 
   .media(desktop; {
-    padding-top: 70px;
+    padding-top: 72px;
     margin-bottom: 0;
   });
 }
@@ -48,7 +52,7 @@
   .media(tablet; {
     .set-font(43px; 50px);
     margin-bottom: 22px;
-    margin-left: -5px;
+    margin-left: -4px;
   });
 
   .media(desktop; {
@@ -79,13 +83,13 @@
   position: relative;
   .set-font(17px; 20px);
   font-weight: bold;
-  padding-top: 83px;
+ /* padding-top: 83.4px;*/
 
   .media(tablet; {
     .set-font(20px; 22px);
     width: 50%;
-    padding-top: 81px;
-    padding-bottom: 29px;
+    /*padding-top: 81px;
+    padding-bottom: 29px;*/
     padding-right: 94px;
   });
 
@@ -94,14 +98,15 @@
   });
 
   &--materials {
-    padding-right: 80px;
+    padding-top: 86px;
+    padding-right: 88px;
 
     &::before{
       position: absolute;
       content: "";
       display: block;
-      top: 30px;
-      left: 8px;
+      top: 29px;
+      left: 9px;
       width: 32px;
       height: 37px;
       z-index: 10;
@@ -109,26 +114,33 @@
     }
 
     .media(tablet; {
-      padding-right: 120px;
+      padding-top: 82px;
+      padding-right: 128px;
     });
   }
 
   &--style {
-    padding-right: 40px;
+    padding-top: 83px;
+    padding-right: 60px;
 
     &::before{
       position: absolute;
       content: "";
       display: block;
       top: 31px;
-      left: 0;
+      left: 1px;
       width: 46px;
       height: 27px;
       background: transparent url("../img/icon-feature-3.svg");
     }
 
     .media(tablet; {
-      padding-right: 80px;
+      padding-top: 110px;
+      padding-right: 100px;
+
+      &::before{
+        top: 59px;
+      }
     });
 
     .media(desktop; {
@@ -137,45 +149,56 @@
   }
 
   &--likes {
+    padding-top: 83px;
     padding-right: 80px;
 
     &::before{
       position: absolute;
       content: "";
       display: block;
-      top: 36px;
-      left: 7px;
+      top: 35px;
+      left: 9px;
       width: 33px;
       height: 28px;
       background: transparent url("../img/icon-feature-5.svg");
     }
 
     .media(tablet; {
-      padding-right: 110px;
+      padding-top: 111px;
+      padding-right: 120px;
+
+      &::before{
+        top: 65px;
+      }
     });
 
   }
 
   &--pretty {
+    padding-top: 83px;
     padding-right: 40px;
 
     &::before{
       position: absolute;
       content: "";
       display: block;
-      top: 33px;
-      left: 3px;
+      top: 32px;
+      left: 4px;
       width: 34px;
       height: 34px;
       background: transparent url("../img/icon-feature-2.svg");
     }
 
-    .media(desktop; {
-      padding-right: 90px;
+
+    .media(tablet; {
+      padding-top: 83px;
+      padding-right: 84px;
     });
   }
 
   &--support {
+    padding-top: 83px;
+
     &::before{
       position: absolute;
       content: "";
@@ -188,7 +211,12 @@
     }
 
     .media(tablet; {
+      padding-top: 110px;
       padding-right: 40px;
+
+      &::before{
+        top: 61px;
+      }
     });
 
     .media(desktop; {
@@ -197,7 +225,8 @@
   }
 
   &--gift {
-     padding-right: 60px;
+    padding-top: 83px;
+    padding-right: 60px;
 
     &::before{
       position: absolute;
@@ -209,6 +238,14 @@
       height: 32px;
       background: transparent url("../img/icon-feature-6.svg");
     }
+
+    .media(tablet; {
+      padding-top: 110px;
+
+      &::before{
+        top: 60px;
+      }
+    });
 
     .media(desktop; {
       padding-right: 80px;

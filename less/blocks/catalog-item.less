@@ -3,7 +3,7 @@
   .flex();
   flex-direction: column;
   border: 1px solid #ededed;
-  margin-bottom: 29px;
+  margin-bottom: 31px;
   .box-shadow();
 
   .media(tablet; {
@@ -11,7 +11,7 @@
     flex-direction: row;
     padding: 0;
     margin: 0;
-    margin-bottom: 53px;
+    margin-bottom: 52px;
   });
 
   .media(desktop; {
@@ -51,6 +51,7 @@
 
   .media(desktop; {
     width: 100%;
+    padding-left: 26px;
   });
 }
 
@@ -70,7 +71,7 @@
   .set-font(17px; 24px);
   font-weight: bold;
   margin-top: 21px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 
   .media(tablet; {
     .set-font(20px; 24px);
@@ -79,7 +80,7 @@
   });
 
   .media(desktop; {
-    margin-top: 23px;
+    margin-top: 25px;
     padding-right: 20px;
   });
 
@@ -100,6 +101,7 @@
     .set-font(15px; 30px);
     padding-bottom: 0px;
     margin-bottom: 0px;
+    margin-left: -2px;
   });
 }
 
@@ -140,8 +142,12 @@
     position: absolute;
     content: "";
     top: 22px;
-    right: 1px;
+    right: 0;
     fill: #cccccc;
+
+    .media(tablet; {
+      right: 2px;
+    });
   }
 
   &:hover{

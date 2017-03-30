@@ -3,7 +3,7 @@
   flex-direction: column;
 
   .media(tablet; {
-    padding-top: 63px;
+    padding-top: 64px;
     padding-bottom: 8px;
     margin-bottom: 40px;
     background-color: @bg-color;
@@ -30,13 +30,14 @@
   position: relative;
   .flex();
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   color: @dark-turquoise;
 
   .media(tablet; {
     flex-direction: row;
     flex-wrap: nowrap;
     margin-bottom: 39px;
+    align-items: flex-start;
   });
 
   &:after {
@@ -84,7 +85,7 @@
   .media(tablet; {
     width: 167px;
     text-align: left;
-    padding-bottom: 0px;
+    margin-bottom: 0;
   });
 
   .media(desktop; {
@@ -118,9 +119,11 @@
   background: transparent;
 
   .media(tablet; {
+    .set-font(19px; 18px);
     width: 500px;
     padding-left: 15px;
     padding-bottom: 12px;
+    margin-top: -3px;
   });
 
   .media(desktop; {
