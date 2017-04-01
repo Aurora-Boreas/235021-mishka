@@ -19,7 +19,7 @@
   position: relative;
 
   .media(tablet; {
-
+    
     &::before {
       position: absolute;
       content: "";
@@ -33,8 +33,8 @@
     }
   });
 
-   .media(desktop; {
-    padding-left: 175px;
+ .media(desktop; {
+  padding-left: 175px;
 
     &::before {
       position: absolute;
@@ -121,17 +121,16 @@
     margin-right: 17px;
     bottom: 0px;
   });
+}
 
-  .review__btn {
-    &:hover svg{
-        fill: @hvr-txt;;
-       }
-
-    &:active svg{
-      fill: @down-txt;
-    }
+.review__btn svg{
+  &:hover {
+    fill: @hvr-txt;;
   }
 
+  &:active {
+    fill: @down-txt;
+  }
 }
 
 .review__btn {
@@ -148,6 +147,4 @@
       text-align: right;
     }
   });
-
 }
-
