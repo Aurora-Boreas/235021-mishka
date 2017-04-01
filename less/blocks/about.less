@@ -7,19 +7,15 @@
     position: absolute;
     content: "";
     display: block;
-    left: 1px;
     top: -10px;
-    width: 110%;
+    width: 100%;
     height: 23px;
     background: transparent url("../img/bg-zigzag-line.svg") repeat-x;
     background-size: contain;
     transform: rotate(180deg);
 
     .media(desktop; {
-      width: 100%;
       top: -2px;
-      left: 0;
-      /*transform: rotate(180deg);*/
     });
   }
 
@@ -59,7 +55,6 @@
     .set-font(53px; 57px);
     margin-top: 10px;
   });
-
 }
 
 .about__list {
@@ -68,28 +63,24 @@
   list-style: none;
 
   .media(tablet; {
-    height: 470px;
+    min-height: 470px;
+    flex-direction: row;
   });
 
   .media(desktop; {
     align-content: flex-start;
-    height: 500px;
+    min-height: 500px;
   });
-
-
 }
 
 .about__text {
   position: relative;
   .set-font(17px; 20px);
   font-weight: bold;
- /* padding-top: 83.4px;*/
 
   .media(tablet; {
     .set-font(20px; 22px);
     width: 50%;
-    /*padding-top: 81px;
-    padding-bottom: 29px;*/
     padding-right: 94px;
   });
 
@@ -116,6 +107,7 @@
     .media(tablet; {
       padding-top: 82px;
       padding-right: 128px;
+      order: -3;
     });
   }
 
@@ -137,6 +129,7 @@
     .media(tablet; {
       padding-top: 110px;
       padding-right: 100px;
+      order: -1;
 
       &::before{
         top: 59px;
@@ -166,12 +159,12 @@
     .media(tablet; {
       padding-top: 111px;
       padding-right: 120px;
+      order: 2;
 
       &::before{
         top: 65px;
       }
     });
-
   }
 
   &--pretty {
@@ -189,10 +182,10 @@
       background: transparent url("../img/icon-feature-2.svg");
     }
 
-
     .media(tablet; {
       padding-top: 83px;
       padding-right: 84px;
+      order: -2;
     });
   }
 
@@ -213,6 +206,7 @@
     .media(tablet; {
       padding-top: 110px;
       padding-right: 40px;
+      order: 1;
 
       &::before{
         top: 61px;
@@ -241,6 +235,7 @@
 
     .media(tablet; {
       padding-top: 110px;
+      order: 3;
 
       &::before{
         top: 60px;
@@ -252,6 +247,3 @@
     });
   }
 }
-
-
-
