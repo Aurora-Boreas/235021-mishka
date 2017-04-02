@@ -35,16 +35,16 @@
   align-items: center;
   margin-right: 60px;
   margin-top: 25px;
-  width: 90px;
+  width: 86px;
   height: 35px;
 
-    &:hover {
-        opacity: 0.7;
-      }
+  &:hover {
+    opacity: 0.7;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
+  }
 
   .media(tablet; {
     margin-top: 24px;
@@ -58,7 +58,19 @@
     margin-right: 0;
     width: 148px;
     height: 73px;
-   });
+  });
+}
+
+.main-nav__logo-link img {
+  .media(tablet; {
+    width: 113px;
+    height: 46px;
+  });
+
+  .media(desktop; {
+    width: 148px;
+    height: 73px;
+  });
 }
 
 .main-nav__toggle {
@@ -82,7 +94,6 @@
   &--nojs {
     background: transparent url('../img/icon-menu-close.svg') no-repeat 50% 50%;
   }
-
 }
 
 .main-nav__list {
@@ -107,7 +118,7 @@
 
   .media(desktop; {
     width: 1050px;
-   });
+  });
 
   &--open {
     .flex();
@@ -127,7 +138,6 @@
 
   .media(tablet; {
     position: relative;
-    /*display: flex;*/
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -136,33 +146,33 @@
 
   &--search {
     .media(tablet; {
-    display: flex;/**/
+    display: flex;
     order: -1;
     border-right: 1px solid @line;
     border-left: 1px solid @line;
     margin-left: 320px;
     width: 84px;
 
-      a {
+    /*  a {
         .set-font(0; 0);
-      };
+      };*/
     });
 
     .media(desktop; {
       margin-left: 318px;
-     });
+    });
 
   }
 
   &--cart {
     .media(tablet; {
-      display: flex;/**/
+      display: flex;
       width: 264px;
       order: -1;
 
-      a {
+      /*a {
       justify-content: flex-end;
-      };
+      };*/
     });
   }
 
@@ -175,12 +185,12 @@
       order: 1;
       width: 168px;
 
-      a {
+    /*  a {
         align-items: flex-start;
         justify-content: flex-start;
         .set-font(15px; 24px);
         padding-top: 19px;
-      };
+      };*/
     });
 
     .media(desktop; {
@@ -188,24 +198,24 @@
       order: -1;
       width: 186px;
 
-      a {
+      /*a {
         .set-font(17px; 24px);
         align-items: center;
         padding-top: 0;
-      }
+      }*/
     });
   }
 
   &--catalog {
     .media(desktop; {
-      display: flex;/**/
-    border-right: 1px solid @line;
+      display: flex;
+      border-right: 1px solid @line;
     });
   }
 
   &--order{
     .media(tablet; {
-      display: flex;/**/
+      display: flex;
       width: 168px;
     });
 
@@ -238,12 +248,12 @@
       order: 3;
       padding-top: 19px;
 
-      a {
+      /*a {
         justify-content: flex-start;
         align-items: flex-start;
         font-size: 15px;
         padding-top: 0;
-      };
+      };*/
     });
   }
 
@@ -263,11 +273,54 @@
       padding-top: 19px;
     });
 
-    span {
+    /*span {
       font-family: @main-font;
       font-weight: normal;
-    }
+    }*/
   }
+}
+
+.main-nav__item--search a {
+  .media(tablet; {
+    .set-font(0; 0);
+  });
+}
+
+.main-nav__item--cart a {
+  .media(tablet; {
+    justify-content: flex-end;
+  });
+}
+
+.main-nav__item--catalog a,
+.main-nav__item--order a {
+  .media(tablet; {
+    align-items: flex-start;
+    justify-content: flex-start;
+    .set-font(15px; 24px);
+    padding-top: 19px;
+  });
+
+  .media(desktop; {
+    .set-font(17px; 24px);
+    align-items: center;
+    padding-top: 0;
+  });
+}
+
+.main-nav__item--new a,
+.main-nav__item--sale a {
+  .media(desktop; {
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 15px;
+    padding-top: 0;
+  });
+}
+
+.main-nav__item--shipping span {
+  font-family: @main-font;
+  font-weight: normal;
 }
 
 .main-nav__link {
@@ -294,21 +347,18 @@
   &:active {
     color: @down-txt;
   }
-
-  svg {
-    position: absolute;
-    top: 36px;
-    left: 30px;
-    fill: @icon;
-  }
-
-  &:hover svg{
-    fill: @dark-turquoise;
-  }
-
-  &:active svg{
-    fill: @down-img;
-  }
-
 }
 
+.main-nav__link svg {
+  position: absolute;
+  top: 36px;
+  left: 30px;
+  fill: @icon;
+}
+
+.main-nav__link:hover svg {
+  fill: #63d1bb;
+}
+.main-nav__link:active svg {
+  fill: #d0f1ea;
+}
